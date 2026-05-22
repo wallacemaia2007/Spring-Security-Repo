@@ -17,13 +17,13 @@ public class Controller {
     }
 
     @GetMapping("/user")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('USER')") // Libera o acesso apenas para usuários com a role "USER"
     public String getInfluencer() {
         return "Hello World USER";
     }
 
     @GetMapping("/admin")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')") // Libera o acesso apenas para usuários com a role "ADMIN"
     public String getBrand() {
         return "Hello World ADMIN";
     }
