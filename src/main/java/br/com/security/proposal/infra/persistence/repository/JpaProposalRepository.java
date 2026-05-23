@@ -35,7 +35,6 @@ public class JpaProposalRepository implements ProposalRepository {
 
     @Override
     public Proposal save(Proposal proposal) {
-
         var pro = ProposalEntity.from(proposal);
         var saved = proposalEntityRepository.save(pro);
         return saved.toDomain();

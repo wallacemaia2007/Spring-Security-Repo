@@ -8,11 +8,11 @@ import br.com.security.proposal.domain.entity.Owner;
 import br.com.security.proposal.domain.repository.ProposalRepository;
 
 @Service
-public class CreateProposal {
+public class CreateProposalUseCase {
 
     private final ProposalRepository proposalRepository;
 
-    public CreateProposal(ProposalRepository proposalRepository) {
+    public CreateProposalUseCase(ProposalRepository proposalRepository) {
         this.proposalRepository = proposalRepository;
     }
 
